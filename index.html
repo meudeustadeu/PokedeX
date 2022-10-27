@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oxanium:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./assets/imgs/pokebola-go.png">
+    <link rel="stylesheet" href="./assets//css/style.css">
+    <script defer src="./src/main.js"></script>
+
+
+    <title>Pokedéx</title>
+</head>
+<body>
+
+    <div id="loading" >
+        <img id="pokemon_loader" src="./assets/imgs/pokebola-go.png" alt="">
+        <h1>Carregando...</h1>
+    </div>
+
+    <main id="conteudo" style="visibility: hidden;">
+        <img id="img" class="pokemon_image" src="" alt="">
+
+        <h1 class="pokemon_data">
+            <span id="poke_number" class="pokemon_number">6</span>-
+            <span id="poke_name"class="pokemon_name"></span>
+        </h1>
+
+        <form class="form">
+
+            <input id="inputid" type="text" class="input-search" placeholder="Insira o nome ou id do Pokemon" required>
+
+            <button id="add-card">Pesquisar</button>
+        </form>
+
+
+        <img class="pokedex" src="./assets/imgs/pokedex.png" alt="">
+    </main>
+</body>
+</html>
